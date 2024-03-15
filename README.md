@@ -74,6 +74,30 @@ In this section, describe the analysis you completed for the machine learning mo
 * Describe the stages of the machine learning process you went through as part of this analysis.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
+
+
+The purpose of this analysis is to build a model, utilizing Logistic Regression, that can correctly identify the creditworthiness of borrowers based on a dataset of historical lending, i.e. `lending_data.csv`.
+
+The dataset includes the following input features (X):
+* loan_size
+* interest_rate
+* borrower_income
+* debt_to_income
+* num_of_accounts
+* derogatory_marks
+* total_debt
+
+The output target (y) will be:
+* loan_status
+
+The `value_counts()` of the target, `loan_status` are the following. 
+
+<img src="images/all_states_all_variables_correlation.png" alt="drawing" width="600"/>
+
+
+
+
+
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
