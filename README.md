@@ -98,6 +98,21 @@ Note: "0" denotes a healthy loan and "1" denotes a high-risk loan in the origina
 
 ### Machine Learning Stages and Methods Used
 
+The notebook [notebook](credit_risk_resampling.ipynb) loads the following libraries and dependencies.
+
+```python
+import numpy as np
+import pandas as pd
+from pathlib import Path
+from sklearn.metrics import balanced_accuracy_score
+from sklearn.metrics import confusion_matrix
+from imblearn.metrics import classification_report_imbalanced
+from sklearn.linear_model import LogisticRegression
+from imblearn.over_sampling import RandomOverSampler
+
+import warnings
+warnings.filterwarnings('ignore')
+```
 After importing the dataset into a Pandas dataframe using `read_csv`, the columns were separated into the features (X) and the target (y) variables for further processing. 
 
 The balance of `0`'s (healthy loans) and `1`'s (high-risk loans) of the `y` variable was checked utilizing the `value_counts` method. 
@@ -110,11 +125,11 @@ The first of two models was a Logistic Regression model. First the model was ins
 
 Then the model was `.fit` to the training dataset. Predictions were run using `.predict` on the testing data. 
 
-Next, balanced accuracy report, confusion matrix, and classification report (`classification_report_imbalanced`) was generated for analysis and evalucation of the model. 
+Next, a balanced accuracy report, confusion matrix, and classification report (`classification_report_imbalanced`) was generated for analysis and evaluation of the model. 
 
 #### Model 2 - Logistic Regression Model with Resampled training data
 
-The same process was followed as in Model 1, except that the data was resampled utilizing the `RandomOverSampler` class from the `imbalanced-learn` library prior to fitting the oversampled data, fitting it to the logistic regression model, making predictions, and generating evaluatory componants for the analysis and comparison of the two model approaches. 
+The same process was followed as in Model 1, except that the data was resampled utilizing the `RandomOverSampler` class from the `imbalanced-learn` library prior to fitting the oversampled data, fitting it to the logistic regression model, making predictions, and generating evaluatory components for the analysis and comparison of the two model approaches. 
 
 ## Results
 
