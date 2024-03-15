@@ -92,7 +92,7 @@ The output target (y) will be:
 
 The `value_counts()` of the target, `loan_status` are the following. 
 
-<img src="images/all_states_all_variables_correlation.png" alt="drawing" width="600"/>
+<img src="images/value_counts.png" alt="drawing" width="600"/>
 
 
 
