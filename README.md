@@ -88,7 +88,7 @@ The output target (y) will be:
 
 The `value_counts()` of the target, `loan_status` are shown in the following screenshot from the Jupyter notebook. 
 
-<img src="images/value_counts.png" alt="drawing" width="200"/>
+<img src="images/value_counts.png" alt="drawing" width="300"/>
 
 Note: "0" denotes a healthy loan and "1" denotes a high-risk loan in the original dataset.
 
@@ -101,8 +101,6 @@ Note: "0" denotes a healthy loan and "1" denotes a high-risk loan in the origina
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1:
   * Description:
   * Balanced Accuracy Score: 95.2% (0.9520479254722232)
@@ -112,7 +110,8 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
   * High-risk loan (1) <u>Recall</u>: 91% (0.91)
 
 See screenshot below for additional classification report metrics for ML Model 1:
-<img src="images/classification_report1.png" alt="drawing" width="600"/>
+
+<img src="images/classification_report1.png" alt="drawing" width="700"/>
 
 
 * Machine Learning Model 2:
@@ -124,7 +123,8 @@ See screenshot below for additional classification report metrics for ML Model 1
   * High-risk loan (1) <u>Recall</u>: 99% (0.99)
 
 See screenshot below for additional classification report metrics for ML Model 2:
-<img src="images/classification_report2.png" alt="drawing" width="600"/>
+
+<img src="images/classification_report2.png" alt="drawing" width="700"/>
 
 
 ## Summary
