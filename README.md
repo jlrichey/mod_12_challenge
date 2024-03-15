@@ -1,8 +1,5 @@
 # Module 12 Challenge - Credit Risk Classification
 
-## Overview
-
-
 ## Overview of the Analysis
 
 ### Purpose of the analysis
@@ -96,25 +93,19 @@ See screenshot below for additional classification report metrics for ML Model 2
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+In Model 1 there were 102 False Positives (FP) and 56 False Negatives (FN) in the data set. In Model 2 there were 116 FPs and 4 FNs. 
 
-If you do not recommend any of the models, please justify your reasoning.
+A FP is a record that was errantly labeled as a high-risk loan (1) but was not (0). This constitutes a loss of opportunity for the company to do business with what would likely have been a profitable loan with a creditworthy customer. 
 
+A FN is a record that was errantly labeled as a healthy loan (0) but was not (1).  This constitutes a loan that would likely have ended in default to a less than creditworthy customer. 
 
+An investment addage that is often cited is that if you lose 50% of your investment it then takes a 100% return to get back to baseline (where you started). It is because of this reality that I would recommend Model 2 over Model 1, with the understanding that it is possible that there is yet a better performing model that could be achieved with more research and fine tuning. 
 
-
-
-
-
+Model 2 produces fewer FNs at 4 for this dataset, compared to 56 with Model 1. Avoiding loss is the primary goal of investing and loan defaults are far worse than loss of opportunity in this case. 
 
 ## Sources
 
 The following sources were consulted in the completion of this project. 
 
-* [Holoviews Plotting Documentation](https://hvplot.holoviz.org/)
 * [pandas.Pydata.org API Reference](https://pandas.pydata.org/docs/reference/index.html)
 * UCB FinTech Bootcamp instructor-led coding exercises
-
-
