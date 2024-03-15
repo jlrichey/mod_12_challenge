@@ -66,17 +66,11 @@ The following observations were made, and conclusions were drawn:
 
 ## Overview of the Analysis
 
-In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
-
-* Explain the purpose of the analysis.
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
-
-
+### Purpose of the analysis
 
 The purpose of this analysis is to build a model, utilizing Logistic Regression, that can correctly identify the creditworthiness of borrowers based on a dataset of historical lending, i.e. `lending_data.csv`.
+
+### Dataset
 
 The dataset includes the following input features (X):
 * loan_size
@@ -90,12 +84,19 @@ The dataset includes the following input features (X):
 The output target (y) will be:
 * loan_status
 
-The `value_counts()` of the target, `loan_status` are the following. 
+### Target Variable Counts
 
-<img src="images/value_counts.png" alt="drawing" width="600"/>
+The `value_counts()` of the target, `loan_status` are shown in the following screenshot from the Jupyter notebook. 
 
+<img src="images/value_counts.png" alt="drawing" width="200"/>
 
+Note: "0" denotes a healthy loan and "1" denotes a high-risk loan in the original dataset.
 
+### Machine Learning Stages
+
+### Methods Used
+
+`LogisticRegression` and resampling methods
 
 
 ## Results
@@ -103,12 +104,28 @@ The `value_counts()` of the target, `loan_status` are the following.
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+  * Description:
+  * Balanced Accuracy Score: 95.2% (0.9520479254722232)
+  * Healthy loan (0) <u>Precision</u>: 100% (1.00)
+  * Healthy loan (0) <u>Recall</u>: 99% (0.99)
+  * High-risk loan (1) <u>Precision</u>: 85% (0.85)
+  * High-risk loan (1) <u>Recall</u>: 91% (0.91)
 
+See screenshot below for additional classification report metrics for ML Model 1:
+<img src="images/classification_report1.png" alt="drawing" width="600"/>
 
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * Description:
+  * Balanced Accuracy Score: 95.2% (0.9936781215845847)
+  * Healthy loan (0) <u>Precision</u>: 100% (1.00)
+  * Healthy loan (0) <u>Recall</u>: 99% (0.99)
+  * High-risk loan (1) <u>Precision</u>: 84% (0.84)
+  * High-risk loan (1) <u>Recall</u>: 99% (0.99)
+
+See screenshot below for additional classification report metrics for ML Model 2:
+<img src="images/classification_report2.png" alt="drawing" width="600"/>
+
 
 ## Summary
 
